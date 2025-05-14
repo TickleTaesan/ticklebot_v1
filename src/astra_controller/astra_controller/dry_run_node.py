@@ -23,6 +23,9 @@ def main(args=None):
     node.declare_parameter('actively_send_joint_state', True)
     node.declare_parameter('joint_names', [ "joint_l1", "joint_l2", "joint_l3", "joint_l4", "joint_l5", "joint_l6", "joint_l7r", "joint_l7l" ])
 
+    #add right arm
+    node.declare_parameter('joint_names', [ "joint_r1", "joint_r2", "joint_r3", "joint_r4", "joint_r5", "joint_r6", "joint_r7r", "joint_r7l" ])
+
     actively_send_joint_state = node.get_parameter('actively_send_joint_state').value
     joint_names = node.get_parameter('joint_names').value
     
