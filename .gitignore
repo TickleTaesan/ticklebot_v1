@@ -1,0 +1,52 @@
+# Ignore ROS 2 build and install directories
+build/
+install/
+log/
+
+# Ignore temporary and cache files
+*.pyc
+__pycache__/
+*.o
+*.d
+*.cmake
+CMakeCache.txt
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+
+# Ignore common editor and IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore dependency management files (if not explicitly tracked)
+# For Python dependencies managed by pipenv or poetry, you might want to track the lock file
+# but ignore the virtual environment.
+# venv/
+# .venv/
+
+# Ignore compiled interface files (messages, services, actions)
+# These are generated during the build process.
+rosidl_generated_c/
+rosidl_generated_cpp/
+rosidl_generated_lisp/
+rosidl_generated_maligngroup/
+rosidl_generated_py/
+
+# Ignore test results
+test_results/
+
+# Ignore documentation build output
+html/
+
+# Ignore core dump files
+core
+
+# Ignore output from debugging and profiling tools
+*.gch
+*.gcda
+*.gcno
+*.lcov
+*.prof
